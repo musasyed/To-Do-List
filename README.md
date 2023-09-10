@@ -1,0 +1,1 @@
+This is a To-Do List project that I created using HTML for structure, CSS for styling, Express.js, which is a Node.js framework used for request handling and high performance, and EJS for templating. With this project, you can add your tasks and mark them as completed.
