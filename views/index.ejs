@@ -1,0 +1,30 @@
+<!-- Adding Header -->
+<%- include("partials/header.ejs") %>
+
+<div class="content">
+    <p>Now Schedule Your Task with this application</p>
+    <h1> <%= todayDate %> </h1>
+    <ul class="box">
+        <h3>Daily Tasks</h3>
+        <% for (let i = 0; i < listItem.length; i++) { %>
+            <li>
+                
+            <label class="checkbox">
+                <input type="checkbox" <%= listItem[i] %>>
+                <span><%= listItem[i] %></span>
+               
+              </label>
+            </li>
+   
+          <% } %>
+            
+    </ul>
+    <form action="/" method="post">
+        <input type="text" name="newItem" autocomplete="off" value="">
+        <button  type="submit">Add</button>
+    </form>
+</div>
+
+
+<!-- Adding Footer -->
+<%- include("partials/footer.ejs") %>
